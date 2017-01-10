@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=09/14/2010, %DriverVersion%
+DriverVer=03/29/2013, %DriverVersion%
 
 [Manufacturer]
 %MfgName% = AzaliaManufacturerID, NTamd64, NTamd64.6.0
@@ -34,6 +34,37 @@ DriverVer=09/14/2010, %DriverVersion%
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0887&SUBSYS_103C2AB8
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0887&SUBSYS_103C2AB9
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2ABA
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2ABD
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2ABE
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C357F
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C3580
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AC6
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AC7
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AC5
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AD6
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AD7
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2ADF
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AE8
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AED
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AF0
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2B02
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AEE
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AE9
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AEA
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AEB
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AEF
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AF2
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2AF5
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AF6
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AF8
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AF9
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AFC
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AFD
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2AFF
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C2B00
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2B06
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2B08
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0280&SUBSYS_103C2B0D
 
 [IntcAzAudModel]
 Include=ks.inf,wdmaudio.inf
@@ -50,6 +81,7 @@ HKR,Settings
 
 [IntcAzAudModelCopyFiles]
 RTKHDA64.SYS
+RTAIODAT.DAT
 
 [FilterSys.CopyFiles]
 Monft64.sys
@@ -282,7 +314,6 @@ HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute
 HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
 HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
 HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
-HKR,Settings,ForceDisableJD,1,0
 HKR,Settings,HP_AIO_Model,0x00010001,1
 
 [HdAudSecurity.AddReg]
@@ -2177,10 +2208,11 @@ AddService = Monfilt64,0x00000000,Filter_Monfilt_Service_Inst
 
 
 [RtkCoInst.AddReg]
-HKR,,CoInstallers32,0x00010000,"RCoInst64XP.dll,RtkCoInstaller"
+HKR,,CoInstallers32,0x00010000,"RtkCoLDR64XP.dll,RtkCoInstallerLoader"
 
 [RtkCoInst.CopyList]
-RCoInst64XP.dll
+RtkCoLDR64XP.dll
+RCoInstII64XP.dll
 
 [RtkCoInstInfo]
 OriginalInfSourcePath = %1%
@@ -2604,9 +2636,11 @@ RtlUpd64.exe=222
 Skytel.exe=222
 Monft64.sys=222
 Ambft64.sys=222
-RCoinst64XP.dll=222
+RtkCoLDR64XP.dll=222
+RCoInstII64XP.dll=222
 RtkAudioService64.exe=222
 vncutil64.exe=222
+RTAIODAT.DAT=222
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
@@ -2632,7 +2666,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-DriverVersion="5.10.0.6201"
+DriverVersion="5.10.0.6873"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"

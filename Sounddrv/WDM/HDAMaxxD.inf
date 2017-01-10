@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=09/14/2010, %DriverVersion%
+DriverVer=03/29/2013, %DriverVersion%
 
 [Manufacturer]
 %MfgName% = AzaliaManufacturerID, NTX86.6.0
@@ -37,6 +37,7 @@ HKR,Settings
 
 [IntcAzAudModelCopyFiles]
 RtkHDAud.sys
+RTAIODAT.DAT
 
 [FilterSys.CopyFiles]
 Monfilt.sys
@@ -266,7 +267,6 @@ HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute
 HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
 HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
 HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
-HKR,Settings,ForceDisableJD,1,0
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
@@ -2166,10 +2166,11 @@ AddService = Monfilt,0x00000000,Filter_Monfilt_Service_Inst
 ;;AddService = ALCXSENS, 0x00000000, ALCxSENS_Service_Inst
 
 [RtkCoInst.AddReg]
-HKR,,CoInstallers32,0x00010000,"RtkCoInstXP.dll,RtkCoInstaller"
+HKR,,CoInstallers32,0x00010000,"RtkCoLDRXP.dll,RtkCoInstallerLoader"
 
 [RtkCoInst.CopyList]
-RtkCoInstXP.dll
+RtkCoLDRXP.dll
+RtkCoInstIIXP.dll
 
 [RtkCoInstInfo]
 OriginalInfSourcePath = %1%
@@ -2592,10 +2593,11 @@ RTCOMDLL.dll=222
 RtlUpd.exe=222
 Monfilt.sys=222
 Ambfilt.sys=222
-RtkCoInstXP.dll=222
+RtkCoLDRXP.dll=222
+RtkCoInstIIXP.dll=222
 RtkAudioService.exe=222
 vncutil.exe=222
-
+RTAIODAT.DAT=222
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
@@ -2622,7 +2624,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-DriverVersion="5.10.0.6201"
+DriverVersion="5.10.0.6873"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"

@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=09/14/2010, %DriverVersion%
+DriverVer=03/29/2013, %DriverVersion%
 
 [Manufacturer]
 %MfgName% = AzaliaManufacturerID, NTX86.6.0
@@ -36,6 +36,7 @@ HKR,Settings
 
 [IntcAzAudModelCopyFiles]
 RtkHDAud.sys
+RTAIODAT.DAT
 
 [RTKHD_SMAPP.CopyList]
 RTHDCPL.EXE
@@ -236,7 +237,6 @@ HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute
 HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
 HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
 HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
-HKR,Settings,ForceDisableJD,1,0
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
@@ -939,6 +939,8 @@ HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Display,1,00,00,00,00
 
 HKLM,%MediaCategories%\%GUID.FMRadio%,Name,,%Node.FMRadio%
 HKLM,%MediaCategories%\%GUID.FMRadio%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.2ndMic%,Name,,%Node.2ndMic%
+HKLM,%MediaCategories%\%GUID.2ndMic%,Display,1,00,00,00,00
 HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
 HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
 
@@ -2306,6 +2308,7 @@ RTSndMgr.CPL=222
 RtlCPAPI.dll=222
 RTCOMDLL.dll=222
 RtlUpd.exe=222
+RTAIODAT.DAT=222
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
@@ -2329,7 +2332,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-DriverVersion="5.10.0.6201"
+DriverVersion="5.10.0.6873"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"
@@ -2917,6 +2920,8 @@ GUID.FrontMicInSilverWave ="{9B72B3D3-32F5-4d3b-868E-C506824ED45A}"
 GUID.FrontMicInWhiteWave  ="{53824709-A7CA-4432-9423-D47A01938B83}"
 GUID.FMRadio              ="{93ED2CB4-7D0D-4c1c-8A91-5AE457E066AD}"
 Node.FMRadio              ="FM radio"
+GUID.2ndMic              ="{8D6EF1FE-9E90-43eb-8E0D-7411B70AB6AC}"
+Node.2ndMic              ="2nd Mic"
 
 GUID.FjIntrMICWave        ="{703EFE0E-C7D3-4506-96BF-E2D28E2ECEEE}"
 GUID.FjMic1Wave           ="{703EFE0D-C7D3-4506-96BF-E2D28E2ECEEE}"

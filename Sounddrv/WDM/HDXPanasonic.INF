@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=09/14/2010, %DriverVersion%
+DriverVer=03/29/2013, %DriverVersion%
 
 [Manufacturer]
 %MfgName% = AzaliaManufacturerID, NTamd64, NTamd64.6.0
@@ -36,6 +36,7 @@ HKR,Settings
 
 [IntcAzAudModelCopyFiles]
 RTKHDA64.SYS
+RTAIODAT.DAT
 
 [FilterSys.CopyFiles]
 Monft64.sys
@@ -268,7 +269,6 @@ HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute
 HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
 HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
 HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
-HKR,Settings,ForceDisableJD,1,0
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
@@ -1064,6 +1064,8 @@ HKLM,%MediaCategories%\%GUID.FjLineIn1Wave%,Display,1,00,00,00,00
 
 HKLM,%MediaCategories%\%GUID.FMRadio%,Name,,%Node.FMRadio%
 HKLM,%MediaCategories%\%GUID.FMRadio%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%GUID.2ndMic%,Name,,%Node.2ndMic%
+HKLM,%MediaCategories%\%GUID.2ndMic%,Display,1,00,00,00,00
 HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Name,,%IntrSubWooferDeviceName%
 HKLM,%MediaCategories%\%GUID.IntrSubWoofer%,Display,1,00,00,00,00
 
@@ -2162,10 +2164,11 @@ AddService = Monfilt64,0x00000000,Filter_Monfilt_Service_Inst
 
 
 [RtkCoInst.AddReg]
-HKR,,CoInstallers32,0x00010000,"RCoInst64XP.dll,RtkCoInstaller"
+HKR,,CoInstallers32,0x00010000,"RtkCoLDR64XP.dll,RtkCoInstallerLoader"
 
 [RtkCoInst.CopyList]
-RCoInst64XP.dll
+RtkCoLDR64XP.dll
+RCoInstII64XP.dll
 
 [RtkCoInstInfo]
 OriginalInfSourcePath = %1%
@@ -2589,9 +2592,11 @@ RtlUpd64.exe=222
 Skytel.exe=222
 Monft64.sys=222
 Ambft64.sys=222
-RCoinst64XP.dll=222
+RtkCoLDR64XP.dll=222
+RCoInstII64XP.dll=222
 RtkAudioService64.exe=222
 vncutil64.exe=222
+RTAIODAT.DAT=222
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
@@ -2617,7 +2622,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-DriverVersion="5.10.0.6201"
+DriverVersion="5.10.0.6873"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"
@@ -3249,6 +3254,8 @@ GUID.RearMicWave 	  ="{5FF88597-5ADD-49d6-8095-29364CD5E0F6}"
 
 GUID.FMRadio              ="{93ED2CB4-7D0D-4c1c-8A91-5AE457E066AD}"
 Node.FMRadio              ="FM radio"
+GUID.2ndMic              ="{8D6EF1FE-9E90-43eb-8E0D-7411B70AB6AC}"
+Node.2ndMic              ="2nd Mic"
 
 GUID.FjIntrMICWave        ="{703EFE0E-C7D3-4506-96BF-E2D28E2ECEEE}"
 GUID.FjMic1Wave           ="{703EFE0D-C7D3-4506-96BF-E2D28E2ECEEE}"

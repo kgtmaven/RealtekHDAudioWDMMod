@@ -10,7 +10,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=%OrganizationName%
 DriverPackageType=PlugAndPlay
 DriverPackageDisplayName=%PackageDisplayName%
-DriverVer=09/14/2010, %DriverVersion%
+DriverVer=03/29/2013, %DriverVersion%
 
 [Manufacturer]
 %MfgName% = AzaliaManufacturerID, NTamd64, NTamd64.6.0
@@ -67,12 +67,41 @@ DriverVer=09/14/2010, %DriverVersion%
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1495
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1496
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1497
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1498
-"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1499
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C1632
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C357B
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C357C
 "Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0662&SUBSYS_103C357D
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C3586
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C3396
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C3397
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C3398
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C18E4
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C18E7
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C18E5
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C339A
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1850
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0269&SUBSYS_103C17E2
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C178A
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C17D4
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C17D5
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1790
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1791
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1905
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1906
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0262&SUBSYS_103C1587
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0262&SUBSYS_103C1588
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0262&SUBSYS_103C1589
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0262&SUBSYS_103C158A
+"Realtek High Definition Audio" = IntcAzAudModel_NonBPC, HDAUDIO\FUNC_01&VEN_10EC&DEV_0262&SUBSYS_103C158B
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2ADE
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C1998
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C213D
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2124
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C18E9
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C18EB
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C198E
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2145
+"Realtek High Definition Audio" = IntcAzAudModel, HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2171
 
 [IntcAzAudModel]
 Include=ks.inf,wdmaudio.inf
@@ -89,6 +118,7 @@ HKR,Settings
 
 [IntcAzAudModelCopyFiles]
 RTKHDA64.SYS
+RTAIODAT.DAT
 
 [RTUninstall.CopyList]
 RtlUpd64.exe
@@ -267,7 +297,14 @@ HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute
 HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
 HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
 HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
-HKR,Settings,ForceDisableJD,1,0
+HKR,Settings,HP_BPC_Model,0x00010001,1
+
+[AZAUD_OEM2.AddReg]
+;;HKR,Settings,RearJackShare,1,1
+HKR,GlobalSettings,HpShutsOffRearSpeaker,1,00,00,00,00 ; Headphone does not mute rear speakers
+HKR,GlobalSettings,HpMode,1,01,00,00,00 ; Headphone is slaved to rear panel front channels
+HKR,GlobalSettings,SpdifOutputEchosRearRenderWhenNoAc3,1,01,00,00,00 ; Slaves rear panel front channels to SPDIF
+HKR,GlobalSettings,CenterLfeSwap,1,00,00,00,00 ; No Swap
 
 [HdAudSecurity.AddReg]
 ; FILE_DEVICE_SOUND
@@ -2398,6 +2435,7 @@ MicCal.exe=222
 RtlUpd64.exe=222
 RTHDCPL.EXE=222
 CPLUTL64.EXE=222
+RTAIODAT.DAT=222
 
 [DestinationDirs]
 DefaultDestDir=10; dirid = \system32\drivers
@@ -2417,7 +2455,7 @@ MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
 ; localizable
 OrganizationName="Realtek Semiconductor Corp."
 PackageDisplayName="HD Audio Driver"
-DriverVersion="5.10.0.6201"
+DriverVersion="5.10.0.6873"
 
 Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
 AUTORUN="Software\Microsoft\Windows\CurrentVersion\Run"
@@ -3020,3 +3058,16 @@ GUID.FjIntrMICWave        ="{703EFE0E-C7D3-4506-96BF-E2D28E2ECEEE}"
 GUID.FjMic1Wave           ="{703EFE0D-C7D3-4506-96BF-E2D28E2ECEEE}"
 GUID.FjLineIn1Wave        ="{703EFE0C-C7D3-4506-96BF-E2D28E2ECEEE}"
 
+[IntcAzAudModel_NonBPC.NTamd64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration
+DelFiles  = RTCOMDLL.DelList, RTLCPAPI.DelList
+CopyFiles = IntcAzAudModelCopyFiles, RTKHD_SMAPP.CopyList, RTKHD_CPL.CopyList, RTLCPAPI.CopyList, RTCOMDLL.CopyList, RTUninstall.CopyList
+DelReg    = RtkHD.DelReg, RTAUD_SMAPP.AddReg, RTCOMDLL.DelReg
+AddReg    = IntcAzAudModelAddReg, RTKHD_SMAPP.AddReg, DS3DConfiguration.AddReg, AECBF.AddReg, AZAUD_OEM2.AddReg, RTLCPAPI.AddReg, CPL_Class.AddReg, RTCOMDLL.AddReg, RTUninstall.AddReg
+[IntcAzAudModel_NonBPC.NTamd64.HW]
+Needs=IntcAzAudModel.NTamd64.HW
+[IntcAzAudModel_NonBPC.NTamd64.Services]
+Needs=IntcAzAudModel.NTamd64.Services
+[IntcAzAudModel_NonBPC.NTamd64.Interfaces]
+Needs=IntcAzAudModel.NTamd64.Interfaces
